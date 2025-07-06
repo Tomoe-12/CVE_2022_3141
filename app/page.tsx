@@ -230,14 +230,14 @@ const App: FC = () => {
   };
 
   return (
-    <div className="bg-slate-50 text-slate-800 font-sans">
+    <div className="bg-slate-50 text-slate-800 font-sans overflow-x-auto">
       <Header
         activeSection={activeSection}
         isMenuOpen={isMenuOpen}
         onMenuToggle={() => setIsMenuOpen(!isMenuOpen)}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:mt-0 mt-16 ">
         <section className="text-center mb-24">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
             Interactive Analysis: CVE-2022-3141
@@ -290,6 +290,7 @@ const App: FC = () => {
           sectionRefs={sectionRefs}
           reportData={reportData}
           currentExploitStep={currentExploitStep}
+          setCurrentExploitStep={setCurrentExploitStep}
         />
 
         <Fix sectionRefs={sectionRefs} reportData={reportData} />
