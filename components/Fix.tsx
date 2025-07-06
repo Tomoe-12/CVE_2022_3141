@@ -1,8 +1,17 @@
 import { CodeBlock } from "@/helper/codeBlock";
-import React from "react";
+import React, { FC, RefObject } from "react";
+
+
+type SectionRefs = {
+  overview: RefObject<HTMLElement | null>;
+  flaw: RefObject<HTMLElement | null>;
+  exploit: RefObject<HTMLElement | null>;
+  fix: RefObject<HTMLElement | null>;
+  reflections: RefObject<HTMLElement | null>;
+};
 
 interface FixProps {
-  sectionRefs: { fix: React.RefObject<HTMLElement> };
+  sectionRefs: SectionRefs;
   reportData: {
     fix: {
       vulnerableCode: string;

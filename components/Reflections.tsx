@@ -1,9 +1,14 @@
-import React from "react";
+import React, { FC, RefObject } from "react";
 
+type SectionRefs = {
+  overview: RefObject<HTMLElement | null>;
+  flaw: RefObject<HTMLElement | null>;
+  exploit: RefObject<HTMLElement | null>;
+  fix: RefObject<HTMLElement | null>;
+  reflections: RefObject<HTMLElement | null>;
+};
 interface ReflectionsProps {
-  sectionRefs: {
-    reflections: React.RefObject<HTMLElement>;
-  };
+  sectionRefs: SectionRefs;
 }
 
 const Reflections: React.FC<ReflectionsProps> = ({ sectionRefs }) => {

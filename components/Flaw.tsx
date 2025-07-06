@@ -1,13 +1,14 @@
 import { CodeBlock } from "@/helper/codeBlock";
 import React, { FC, RefObject } from "react";
 
-interface SectionRefs {
-  overview: RefObject<HTMLElement>;
-  flaw: RefObject<HTMLElement>;
-  exploit: RefObject<HTMLElement>;
-  fix: RefObject<HTMLElement>;
-  reflections: RefObject<HTMLElement>;
-}
+
+type SectionRefs = {
+  overview: RefObject<HTMLElement | null>;
+  flaw: RefObject<HTMLElement | null>;
+  exploit: RefObject<HTMLElement | null>;
+  fix: RefObject<HTMLElement | null>;
+  reflections: RefObject<HTMLElement | null>;
+};
 
 interface FlawProps {
   sectionRefs: SectionRefs;

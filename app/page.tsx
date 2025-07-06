@@ -170,11 +170,11 @@ const App: FC = () => {
   const [currentExploitStep, setCurrentExploitStep] = useState(0);
 
   const sectionRefs = {
-    overview: useRef<HTMLElement>(null),
-    flaw: useRef<HTMLElement>(null),
-    exploit: useRef<HTMLElement>(null),
-    fix: useRef<HTMLElement>(null),
-    reflections: useRef<HTMLElement>(null),
+    overview: useRef<HTMLElement | null>(null),
+    flaw: useRef<HTMLElement | null>(null),
+    exploit: useRef<HTMLElement | null >(null),
+    fix: useRef<HTMLElement |null  >(null),
+    reflections: useRef<HTMLElement | null>(null),
   };
 
   useEffect(() => {
