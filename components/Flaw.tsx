@@ -34,7 +34,7 @@ const Flaw: FC<FlawProps> = ({ sectionRefs, reportData }) => {
       </p>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <div className="grid lg:grid-cols-2 gap-8 items-start">
-          <div>
+          <div className="w-full overflow-x-scroll sm:overflow-hidden ">
             <p className="text-sm font-semibold mb-2 text-slate-600">
               Vulnerable Function:
             </p>

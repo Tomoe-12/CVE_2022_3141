@@ -244,21 +244,21 @@ const App: FC = () => {
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
             An in-depth look at the authenticated SQL Injection vulnerability in
-            the TranslatePress WordPress plugin, enhanced with ✨ Gemini AI.
+            the TranslatePress WordPress plugin.
           </p>
         </section>
 
         <section
           id="overview"
           ref={sectionRefs.overview}
-          className="mb-24 scroll-mt-24"
+          className="mb-24 b scroll-mt-24"
         >
           <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
             Vulnerability Overview
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <p className="text-slate-600 leading-relaxed">
+            <div className="bg-white p-4 lg:p-8 rounded-lg shadow-md ">
+              <p className="text-slate-600  leading-relaxed">
                 {reportData.overview.text}
               </p>
             </div>

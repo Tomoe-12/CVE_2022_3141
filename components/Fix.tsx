@@ -22,14 +22,14 @@ const Fix: React.FC<FixProps> = ({ sectionRefs, reportData }) => {
         validation function that whitelists allowed characters for language
         codes, effectively blocking malicious input.
       </p>
-      <div className="grid md:grid-cols-2 gap-8">
-        <div>
+      <div className="grid md:grid-cols-2 gap-8  w-full ">
+        <div className="w-full sm:overflow-hidden overflow-x-scroll">
           <h3 className="text-xl font-semibold text-slate-800 mb-4 text-center">
             Vulnerable Code
           </h3>
           <CodeBlock code={reportData.fix.vulnerableCode} />
         </div>
-        <div>
+        <div className="w-full sm:overflow-hidden overflow-x-scroll">
           <h3 className="text-xl font-semibold text-slate-800 mb-4 text-center">
             Patched Code
           </h3>
